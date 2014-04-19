@@ -1,0 +1,37 @@
+# -*- coding: utf-8 -*-
+#:kivy 1.8.0
+
+
+<CelestialObject>:
+    size: 50,50
+    canvas:
+
+        Ellipse:
+            pos: self.pos
+            size: self.size
+
+
+<GravGame>:
+    sun1: object_1
+    sun2: object_2
+
+    CelestialObject:
+        id: object_1
+        center: self.parent.center
+    CelestialObject:
+        id: object_2
+        center_x: self.parent.center_x / 4
+        center_y: self.parent.center_y / 4 
+
+
+
+
+
+
+
+
+
+
+
+
+
